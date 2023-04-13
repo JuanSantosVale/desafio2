@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/estilo.css') }}">
+    <link rel="stylesheet" href="../static/styles/estilo.css">
 </head>
    {% block styles %}
    {% endblock %}
-  <body>
-  <body background="{{ url_for('static', filename='img/fundo2.png')}}">
      <div>
          <img src="{{ url_for('static', filename='img/logo.png')}}" alt="" style="margin-top: 30px;margin-left: 100px;">
          <a style="margin-right: 100px;" href="contato">Contato</a>
          <a href="quem-somos">Quem somos |</a>
          <a href="/">Home |</a>
      </div>
-        {% block content %}
+    {% block content %}
     {% endblock %}
          <div>
         
